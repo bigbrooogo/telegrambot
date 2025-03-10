@@ -1,4 +1,8 @@
 #Release_notes
 
+#Release 0.1.0
 *Added tg bot
 *Added spring boot skeleton
+
+#Release 0.2.0
+*Implemented command pattern for tg bot commands
