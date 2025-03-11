@@ -6,3 +6,6 @@
 
 #Release 0.2.0
 *Implemented command pattern for tg bot commands
+
+#Release 0.3.0
+*Added deployment process to the project
