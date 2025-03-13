@@ -1,4 +1,4 @@
-package com.bigbrooogo.github.javarushtelegrambot.command;
+package com.bigbrooogo.github.javarushtelegrambot.service;
 
 import com.bigbrooogo.github.javarushtelegrambot.bot.JavarushTelegrambot;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -9,3 +9,6 @@
 
 #Release 0.3.0
 *Added deployment process to the project
+
+#Release 0.4.0
+*Added repository layer

@@ -1,5 +1,6 @@
 package com.bigbrooogo.github.javarushtelegrambot.command;
 
+import com.bigbrooogo.github.javarushtelegrambot.service.SendBotMessageService;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 import static com.bigbrooogo.github.javarushtelegrambot.command.CommandName.*;
@@ -16,8 +17,9 @@ public class HelpCommand implements Command {
                     + "<b>Начать\\закончить работу с ботом</b>\n"
                     + "%s - начать работу со мной\n"
                     + "%s - приостановить работу со мной\n"
-                    + "%s - получить помощь в работе со мной\n",
-            START.getCommandName(), STOP.getCommandName(), HELP.getCommandName());
+                    + "%s - получить помощь в работе со мной\n"
+                    + "%s - получить статистику.",
+            START.getCommandName(), STOP.getCommandName(), HELP.getCommandName(), STAT.getCommandName());
 
     @Override
     public void execute(Update update) {

@@ -1,14 +1,14 @@
 package com.bigbrooogo.github.javarushtelegrambot;
 
 import com.bigbrooogo.github.javarushtelegrambot.command.*;
+import com.bigbrooogo.github.javarushtelegrambot.repository.TelegramUserService;
+import com.bigbrooogo.github.javarushtelegrambot.service.SendBotMessageService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-
-import static com.bigbrooogo.github.javarushtelegrambot.command.CommandName.START;
 
 @DisplayName("Unit-level testing for CommandContainer")
 
@@ -20,7 +20,8 @@ public class CommandContainerTest {
     @BeforeEach
     public void init() {
         sendBotMessageService = Mockito.mock(SendBotMessageService.class);
-        commandContainer = new CommandContainer(sendBotMessageService);
+        TelegramUserService telegramUserService = Mockito.mock(TelegramUserService.class);
+        commandContainer = new CommandContainer(sendBotMessageService,telegramUserService);
     }
     @Test
     public void shouldgGetAllExistingCommands() throws TelegramApiException {

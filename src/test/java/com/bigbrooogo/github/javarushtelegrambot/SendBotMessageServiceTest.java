@@ -1,8 +1,8 @@
 package com.bigbrooogo.github.javarushtelegrambot;
 
 import com.bigbrooogo.github.javarushtelegrambot.bot.JavarushTelegrambot;
-import com.bigbrooogo.github.javarushtelegrambot.command.SendBotMessageService;
-import com.bigbrooogo.github.javarushtelegrambot.command.SendBotMessageServiceImpl;
+import com.bigbrooogo.github.javarushtelegrambot.service.SendBotMessageService;
+import com.bigbrooogo.github.javarushtelegrambot.service.SendBotMessageServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
