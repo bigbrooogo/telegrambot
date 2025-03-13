@@ -1,7 +1,8 @@
 package com.bigbrooogo.github.javarushtelegrambot;
 
 
-import com.bigbrooogo.github.javarushtelegrambot.command.*;
+import com.bigbrooogo.github.javarushtelegrambot.command.Command;
+import com.bigbrooogo.github.javarushtelegrambot.command.UnknownCommand;
 import org.junit.jupiter.api.DisplayName;
 
 @DisplayName("Unit-level testing for UnknownCommand")

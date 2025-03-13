@@ -1,4 +1,4 @@
-package com.bigbrooogo.github.javarushtelegrambot.command;
+package com.bigbrooogo.github.javarushtelegrambot.service;
 
 public interface SendBotMessageService {
     /**
